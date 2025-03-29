@@ -1,26 +1,39 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import starlightThemeObsidian from 'starlight-theme-obsidian'
 
 // https://astro.build/config
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'My Docs',
+			plugins: [starlightThemeObsidian()],
+			title: 'Saddle Network',
 			social: {
-				github: 'https://github.com/withastro/starlight',
+				telegram: 'https://t.me/saddlenet',
+				discord: 'https://discord.gg/EbqMaVB',
+				blueSky: 'https://bsky.app/profile/saddle.network',
 			},
 			sidebar: [
 				{
-					label: 'Guides',
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
-					],
+					label: 'Infrastructure',
+					
+					autogenerate: { directory: 'infra' },
 				},
 				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
+					label: 'Commercial Services',
+					autogenerate: { directory: 'ext-srv' },
+				},
+				{
+					label: 'Internal Services',
+					items: [
+					  'srv/home',
+					  // A nested group of links for seasonal constellations.
+					  {
+						label: 'Communications',
+						autogenerate: { directory: 'srv/comms' },
+					  },
+					],
 				},
 			],
 		}),

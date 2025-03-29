@@ -1,0 +1,24 @@
+---
+title: Anycast DNS
+description: A reliable and fast DNS network.
+---
+
+Saddle Network maintains an anycast DNS service for internal and public use supporting various name spaces.
+
+```
+Ports 53 (DNS), 853 (TLS)
+---
+128.254.224.53
+128.254.224.54
+```
+
+Currently, our DNS service operates within Chicago, Amsterdam, Warsaw, and Osaka.
+We plan on expanding to other locations in the future.
+
+## Supported Namespaces
+
+| Name Space | Notes |
+| --- | --- |
+| **ICANN** | Typical DNS, https://icann.org/ |
+| **DotFur** | .fur TLD, https://dotfur.org/ |
+| **DotPony** | Our own silly implementation of a .pony TLD |
