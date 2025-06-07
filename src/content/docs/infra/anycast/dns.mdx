@@ -1,0 +1,38 @@
+---
+title: Recursive DNS
+description: Anycast DNS is a global DNS network that provides fast and reliable DNS resolution.
+---
+## Anycast DNS
+Saddle Network's anycast DNS is a global DNS network that provides fast and reliable DNS resolution. By using anycast routing, we ensure that DNS queries are answered by the nearest available server, reducing latency and improving performance for users worldwide.
+
+### Underlying Technology
+We make use of [CZ.NIC](http://www.nic.cz/en)'s [knot-resolver](https://www.knot-resolver.cz/) to provide our anycast DNS service. Knot Resolver is a high-performance, flexible, and secure DNS resolver that supports modern DNS features and requires minimal resources. It is designed to handle large volumes of DNS queries efficiently, making it an ideal choice for our anycast DNS infrastructure.
+
+### Key Features
+- **Global Reach**: Our DNS servers are strategically located around the world, ensuring that users are always accessing our nearest infrastructure, cutting down on latency.
+- **High Availability**: With anycast comes the benefit of failover; if one server goes down, traffic is automatically rerouted to the next closest server, ensuring continuous service availability.
+- **Privacy Focused**: We prioritize user privacy by not logging DNS queries and running all queries on our server, ensuring that your browsing history remains private.
+- **furry.domains Support**: Our DNS service is compatible with .fur domains, providing a dedicated space for the furry community online.
+
+## DNS Server Information
+
+| IPv4 DNS Addresses |
+|---|
+| 128.254.224.53 |
+| 128.254.224.54 |
+
+| IPv6 DNS Addresses |
+|---|
+| 2602:fbec:224::53 |
+| 2602:fbec:224::54 |
+
+| Supported Connectivity Methods | Port |
+|---|---|
+| DNS over UDP (default) | 53 |
+| DoT (DNS over TLS) | 853 |
+
+| Planned Connectivity Methods | Port |
+|---|---|  
+| DoH (DNS over HTTPS) | 443 |
+| DNS over QUIC | 443 |
+

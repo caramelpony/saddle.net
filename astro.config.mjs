@@ -21,8 +21,12 @@ export default defineConfig({
 						'infra/hosts',
 						'infra/asns',
 						'infra/ips',
+						'infra/peering',
 						'infra/pops',
-						'infra/networks',
+						{
+							label: 'Anycast Infrastructure',
+							autogenerate: { directory: 'infra/anycast' },
+					  	},
 					  ],
 				},
 				{

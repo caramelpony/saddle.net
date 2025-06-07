@@ -1,0 +1,67 @@
+---
+title: Peering Policies
+description: Saddle Network's Peering Policies.
+---
+
+## Peering Policies
+
+Saddle Network's peering policies are designed to ensure efficient and reliable interconnection with other networks.
+
+### General Peering Principles
+- **Open Peering**: We encourage open peering arrangements with networks that share our commitment to quality and reliability.
+- **No Cost Peering**: We do not charge for peering when announced owned resources; however, we expect reciprocal arrangements.
+- **Quality of Service**: We encourage our peers to maintain high standards of service quality, including reliability, and performance.
+
+#### Peering Costs
+As a principle, Saddle Network does not charge for peering arrangements when peers announce their own resources. However, we may consider cost-based arrangements in specific cases where free peering would burden our network or require significant investment in infrastructure. 
+
+For no cost peering, we have a few requirements:
+- **Reciprocal Peering**: We expect reciprocal arrangements, where both parties announce their resources to each other.
+- **One Party Owned Resources**: We do not allow nested peering arrangements, where one party announces their resources via another that is already peered with us. We require that each party announces their own resources directly to us.
+- **No Resale**: We do not allow peers to resell our peering arrangements or use them for commercial transit purposes.
+- **No Abuse**: We do not allow peers to engage in any form of abuse, spam, or illegal activities through our network.
+- **Reliability in lieu of SLA**: We expect peers to maintain a stable and reliable peering session. While we do not offer a formal Service Level Agreement (SLA) for peering, we expect peers to adhere to best practices and maintain a high level of reliability.
+
+The following list outlines the types of peering arrangements where we may require cost-based arrangements:
+- **Transit Peering**: If a network requires transit services in addition to peering (i.e. default route or full table ), we may consider cost-based arrangements for the transit portion.
+- **High Incoming Traffic**: If a network has a high volume of incoming traffic that significantly impacts our network, we may consider cost-based arrangements to cover the additional costs incurred.
+- **Specialized Services**: If a network requires specialized services or infrastructure that goes beyond standard peering arrangements, we may consider cost-based arrangements to cover the additional costs incurred.
+
+### Peering Types
+Saddle Network supports various types of peering arrangements to accommodate different network requirements.
+- **Public Peering**: We peer at public Internet Exchange Points (IXPs) where we are a member and common Points of Presence (PoP).
+- **Direct Peering**: We establish a cross-connect with networks that have a physical presence in our PoPs, allowing for direct peering arrangements.
+- **Tunnel Peering**: Tunnel peering is available for networks that cannot establish a direct physical connection.
+
+***Special Note on Tunnel Peering***: *Tunnel peering is a last resort option and is not recommended for production traffic. It is primarily intended for testing and development purposes, or hobbyist networks that do not require any sort of guarantee. We do not offer any level of Service Level Agreement (SLA) or reliability for tunnel peering arrangements.*
+
+*Regardless of available underlying link speeds, tunnel peering is limited to 100Mbps. This is to ensure that tunnel peering arrangements do not put undue strain on our network infrastructure and hurt the quality of service for other peers. We reserve the right to terminate tunnel peering arrangements that exceed this limit or cause performance issues.*
+
+## Peering Requirements
+| Requirement | |
+|---|---|
+| **Dual Stack** | We almost exclusively peer with networks that support both IPv4 and IPv6. |
+| **Owned Resources** | Peers must announce their own resources, including both ASN and announced IP prefixes. |
+| **Technical Capability** | Peers must have the technical capability to maintain a stable and reliable peering session, including support for BGP and IPv6. |
+| **Routing Policies** | Peers must adhere to standard routing policies and practices, including the use of prefix filtering and route validation. |
+| **No Spam or Abuse** | Peers must not engage in any form of spam, abuse, or illegal activities. |
+| **Current Contact Information** | Peers must provide current contact information for technical and operational issues. This includes a valid email address and phone number for the NOC (Network Operations Center) or equivalent team. |
+| **Good Standing** | Peers must be in good standing with Saddle Network and not have any outstanding disputes. This includes compliance with our peering policies and practices, as well as adherence to any applicable laws and regulations. |
+
+***Special Note on Good Standing***: *Saddle Network reserves the right to terminate peering arrangements with networks that are not in good standing, including those that have outstanding disputes or do not comply with our peering policies and practices. We also reserve the right to refuse peering arrangements with networks that do not meet our requirements or pose a risk to our network infrastructure.*
+
+## Countries We Refuse Peering
+Saddle Network does not peer with, and may sometimes drop routes to, networks located in the following countries due to legal, regulatory, or operational concerns:
+- **North Korea**: Due to strict government control, lack of transparency, technical infeasability, and potential for abuse.
+- **Russia**: Due to ongoing geopolitical tensions, legal and regulatory concerns, technical difficulty, and potential for abuse.
+- **Israel**: Due to ongoing genocide, legal and regulatory concerns, including potential for abuse and lack of transparency.
+
+## Network Operations Center (NOC) Contact
+For peering request, technical or operational issues, and anything related to our network, please contact our Network Operations Center (NOC) at:
+- **Email**: netops@saddle.network
+
+For abuse reports, please contact our Abuse Team at:
+- **Email**: abuse@saddle.network
+
+For legal inquiries, please contact our Legal Team at:
+- **Email**: legal@saddle.network
