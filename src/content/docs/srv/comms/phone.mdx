@@ -6,17 +6,50 @@ sidebar:
 ---
 We maintain a proprietary and internal numbering plan for a private phone system. This numbering plan is invite only and is not publicly accessible. 
 
-The numbering plan is designed to be similar to the North American Numbering Plan (NANP) and is based on the following format:
+### 12 Digit Variable Length Numbering Plan
 
-| Tier Code | Sub Code | Subscriber Number |
-| --- | --- | --- |
-| 1 digits  | 2 digits | 7 digits          | 
-| NXX | XXX | XXXX |
+The numbering plan is designed to match our internal needs and is based on the following format:
+| 12 Digit Variable Length Numbering Plan | | | |
+| Tier Code | Sub Code | Assignee Prefix | Subscriber Number |
+| --- | --- | --- | --- |
+| 1 digits  | 2 digits | 3 digits | Remaining Digits | 
+| N | XX | XXX | See Below |
 
 
 Where `X` is a digit from 0 to 9 and `N` is a digit from 2 to 9. 
 
 The first digit of the tier code must be a number from 2 to 9, as tier codes `0` and `1` are reserved for administration's proprietary use.
+
+### Variable Subscriber Blocks 
+
+In the above numbering format, the remaining 6 digits for the subscriber number may not always be assigned in whole to one provider.
+
+For example, providers may request 10, 100, 1000 or 10000 number blocks for allocation.
+
+Providers are assigned a "Prefix", a fixed sequence of digits infront of the digits that would make up their numbering block.
+
+So for example: 
+| Prefix ||
+| --- | --- |
+| 1-23-456-12345X | We own anything 0 - 9 on the digit X |
+
+#### Prefix Sizes Available
+
+| Prefix | Numbers Available | |
+| --- | --- | --- |
+| 1-23-456-XXXXX | 10 Numbers | 0 - 9 |
+| 1-23-456-XXXX | 100 Numbers | 00 - 99 |
+| 1-23-456-XXX | 1,000 Numbers | 000 - 999 |
+| 1-23-456-XX | 10,000 Numbers | 0000 - 9999 |
+
+We do maintain larger blocks for allocation if the provider intends to sub-assign a significant portion of the space.
+
+| Prefix | Numbers Available | |
+| --- | --- | --- |
+| 1-23-456-X | 100,000 Numbers | 00000 - 99999 |
+| 1-23-456 | 1,000,000 Numbers | 000000 - 999999 |
+
+### Tier Codes
 
 Below is a list of the tier codes and their usecases:
 

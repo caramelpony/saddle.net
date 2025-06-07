@@ -1,0 +1,41 @@
+---
+title: DN42
+description: All of Saddle Network's Address Space.
+---
+
+## Current Address Space
+
+Saddle Network maintains a variety of address space allocations for use in its network operations. 
+
+Below you will find a table of the current address space allocations, sorted by [Networks](/infra/networks).
+
+### IANA 
+**Note:** Regional Registries within the [IANA](/infra/networks/iana) network typically lallocate a minimum of /24 for IPv4 and /48 for IPv6, hence the large allocations compared to our other networks.
+
+| Address Space | Region Internet Registry            | Allocation Usecase |
+| -------------- | ---------------------------------- | ------------------ |
+| **IPv4** |||
+| [128.254.224.0/22](/infra/ips/224.0) | [ARIN](https://whois.arin.net/rest/net/NET-128-254-224-0-1) | Anycast |
+| **IPv6** |||
+| [2602:fbec::/36](/infra/ips/2602fbec) | [ARIN](https://whois.arin.net/rest/net/NET6-2602-FBEC-1) | Mixed Use |
+| [2a10:4741::/44](/infra/ipa/2a104741) | [RIPE](https://apps.db.ripe.net/db-web-ui/#/query?searchtext=2a10:4741::/44) | Mixed Use |
+
+### DN42
+**Note:** [DN42](/infra/networks/dn42) is a hobbyist network that provides a space for experimentation and learning. As such, allocations are typically smaller than those from the IANA network.
+
+| Address Space | Region Internet Registry            | Allocation Usecase |
+| -------------- | ---------------------------------- | ------------------ |
+| **IPv4** |||
+| 172.23.66.192/26 | [DN42](https://dn42.dev) | Mixed Use |
+| **IPv6** |||
+| fd59:aca:4c08::/48 | [DN42](https://dn42.dev) | Mixed Use |
+
+### XENIA
+**Note:** [XENIA](/infra/networks/xenia) is an invite-only private peering network. As such, allocations can vary vastly in size from other networks.
+
+| Address Space | Region Internet Registry            | Allocation Usecase |
+| -------------- | ---------------------------------- | ------------------ |
+| **IPv4** |||
+| 172.28.0.0/16 | [XENIA](https://xnia.net) | Mixed Use |
+| **IPv6** |||
+| e621::/16 | [XENIA](https://xnia.net) | Mixed Use |

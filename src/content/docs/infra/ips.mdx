@@ -10,9 +10,9 @@ Saddle Network maintains a variety of address space allocations for use in its n
 Below you will find a table of the current address space allocations, sorted by [Networks](/infra/networks).
 
 ### IANA 
-**Note:** Regional Registries within the [IANA](/infra/networks/iana) network typically lallocate a minimum of /24 for IPv4 and /48 for IPv6, hence the large allocations compared to our other networks.
+**Note:** Regional Registries within the [IANA](/infra/nets/iana) network typically allocate a minimum of /24 for IPv4 and /48 for IPv6, hence the large allocations compared to our other networks.
 
-| Address Space | Region Internet Registry            | Allocation Usecase |
+| Address Space | Regional Internet Registry            | Allocation Usecase |
 | -------------- | ---------------------------------- | ------------------ |
 | **IPv4** |||
 | [128.254.224.0/22](/infra/ips/224.0) | [ARIN](https://whois.arin.net/rest/net/NET-128-254-224-0-1) | Anycast |
@@ -21,9 +21,9 @@ Below you will find a table of the current address space allocations, sorted by 
 | [2a10:4741::/44](/infra/ipa/2a104741) | [RIPE](https://apps.db.ripe.net/db-web-ui/#/query?searchtext=2a10:4741::/44) | Mixed Use |
 
 ### DN42
-**Note:** [DN42](/infra/networks/dn42) is a hobbyist network that provides a space for experimentation and learning. As such, allocations are typically smaller than those from the IANA network.
+**Note:** [DN42](/infra/nets/dn42) is a hobbyist network that provides a space for experimentation and learning. As such, allocations are typically smaller than those from the IANA network.
 
-| Address Space | Region Internet Registry            | Allocation Usecase |
+| Address Space | Regional Internet Registry            | Allocation Usecase |
 | -------------- | ---------------------------------- | ------------------ |
 | **IPv4** |||
 | 172.23.66.192/26 | [DN42](https://dn42.dev) | Mixed Use |
@@ -31,11 +31,20 @@ Below you will find a table of the current address space allocations, sorted by 
 | fd59:aca:4c08::/48 | [DN42](https://dn42.dev) | Mixed Use |
 
 ### XENIA
-**Note:** [XENIA](/infra/networks/xenia) is an invite-only private peering network. As such, allocations can vary vastly in size from other networks.
+**Note:** [XENIA](/infra/nets/xenia) is an invite-only private peering network. As such, allocations can vary vastly in size from other networks.
 
-| Address Space | Region Internet Registry            | Allocation Usecase |
+| Address Space | Regional Internet Registry            | Allocation Usecase |
 | -------------- | ---------------------------------- | ------------------ |
 | **IPv4** |||
 | 172.28.0.0/16 | [XENIA](https://xnia.net) | Mixed Use |
 | **IPv6** |||
 | e621::/16 | [XENIA](https://xnia.net) | Mixed Use |
+
+
+## Decommissioned Address Space
+Over time, we have ceased to use some of our address space and returned it to its respective RIR's pools. Below is a list of decommissioned address space:
+
+| Address Space | Regional Internet Registry | Former Usecase |
+| -------------- | ---------------------------------- | ------------------ |
+| **IPv4** |||
+| 23.133.40.0/24 | [ARIN](https://whois.arin.net/rest/net/NET-128-254-224-0-1) allocated under [4.10.](https://www.arin.net/participate/policy/nrpm/#4-10-dedicated-ipv4-allocation-to-facilitate-ipv6-deployment) | uk-wov-1 - see [decommissioned PoPs](/infra/pops) |

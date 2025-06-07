@@ -9,16 +9,25 @@ export default defineConfig({
 		starlight({
 			plugins: [starlightThemeObsidian()],
 			title: 'Saddle Network',
-			social: {
-				telegram: 'https://t.me/saddlenet',
-				discord: 'https://discord.gg/EbqMaVB',
-				blueSky: 'https://bsky.app/profile/saddle.network',
-			},
+	      	social: [
+        		{ icon: 'telegram', label: 'Telegram', href: 'https://t.me/saddlenet' },
+        		{ icon: 'discord', label: 'Discord', href: 'https://discord.gg/EbqMaVB' },
+        		{ icon: 'blueSky', label: 'BlueSky', href: 'https://bsky.app/profile/saddle.network' },
+			],
 			sidebar: [
 				{
 					label: 'Infrastructure',
-					
-					autogenerate: { directory: 'infra' },
+					items: [
+						'infra/hosts',
+						'infra/asns',
+						'infra/ips',
+						'infra/pops',
+						'infra/networks',
+					  ],
+				},
+				{
+					label: 'Networks',
+					autogenerate: { directory: 'infra/nets' },
 				},
 				{
 					label: 'Commercial Services',
